@@ -1,0 +1,14 @@
+D:\WebMaterials\naty\BYU\.NET\Learning\bin\Debug\net10.0\Learning.exe
+D:\WebMaterials\naty\BYU\.NET\Learning\bin\Debug\net10.0\Learning.deps.json
+D:\WebMaterials\naty\BYU\.NET\Learning\bin\Debug\net10.0\Learning.runtimeconfig.json
+D:\WebMaterials\naty\BYU\.NET\Learning\bin\Debug\net10.0\Learning.dll
+D:\WebMaterials\naty\BYU\.NET\Learning\bin\Debug\net10.0\Learning.pdb
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.AssemblyInfoInputs.cache
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.AssemblyInfo.cs
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.csproj.CoreCompileInputs.cache
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.dll
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\refint\Learning.dll
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.pdb
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\Learning.genruntimeconfig.cache
+D:\WebMaterials\naty\BYU\.NET\Learning\obj\Debug\net10.0\ref\Learning.dll
