@@ -1,0 +1,19 @@
+Sales Summary
+ 
+Total Sales: $2,012.20
+
+Details:
+    Store stores:
+        sales.json: $88.88
+    Store 201:
+        sales.json: $501.22
+        salestotals.json: $1,501.22
+    Store 202:
+        sales.json: $1,234.22
+        salestotals.json: $101.22
+    Store 203:
+        sales.json: $99.00
+        salestotals.json: $154,401.22
+    Store 204:
+        sales.json: $88.88
+        salestotals.json: $13,501.22

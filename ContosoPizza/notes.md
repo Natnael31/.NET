@@ -1,54 +1,10 @@
-﻿using System.IO;
-using System.Text;
-using System.Collections.Generic;
-using Newtonsoft.Json;
+#### Evidence Pizzas List
 
-var currentDirectory = Directory.GetCurrentDirectory();
-var storesDirectory = Path.Combine(currentDirectory, "stores");
+[Existing List With Additional Record](evidence.png)
 
-var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-Directory.CreateDirectory(salesTotalDir);
+#### working sales summary function
 
-var salesFiles = FindFiles(storesDirectory);
-
-var salesTotal = CalculateSalesTotal(salesFiles);
-
-File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
-
-GenerateSalesSummary(salesFiles, salesTotal, salesTotalDir);
-
-IEnumerable<string> FindFiles(string folderName)
-{
-    List<string> salesFiles = new List<string>();
-
-    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-
-    foreach (var file in foundFiles)
-    {
-        var extension = Path.GetExtension(file);
-        if (extension == ".json")
-        {
-            salesFiles.Add(file);
-        }
-    }
-
-    return salesFiles;
-}
-
-double CalculateSalesTotal(IEnumerable<string> salesFiles)
-{
-    double salesTotal = 0;
-
-    foreach (var file in salesFiles)
-    {
-        string salesJson = File.ReadAllText(file);
-        SalesData? data = JsonConvert.DeserializeObject<SalesData?>(salesJson);
-        salesTotal += data?.Total ?? 0;
-    }
-
-    return salesTotal;
-}
-
+```csharp
 void GenerateSalesSummary(IEnumerable<string> salesFiles, double totalSales, string outputDirectory)
 {
     StringBuilder summary = new StringBuilder();
@@ -97,19 +53,7 @@ void GenerateSalesSummary(IEnumerable<string> salesFiles, double totalSales, str
     Console.WriteLine($"Sales summary saved to: {summaryPath}");
 }
 
+// Required record declarations
 record SalesData(double Total);
 record SalesDataTotal(double OverallTotal);
-
-
-
-
-
-
-
-
-// var salesFiles = FindFiles("stores");
-
-// foreach (var file in salesFiles)
-// {
-//     Console.WriteLine(file);
-// }
+```
