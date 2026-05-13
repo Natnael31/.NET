@@ -1,0 +1,22 @@
+GET http://localhost:5213/
+
+###
+GET http://localhost:5213/todos
+
+###
+POST http://localhost:5213/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Write demo for WebAPI 1",
+    "duedate": "2024-06-30T23:59:00",
+    "isCompleted": false
+}  
+
+###
+
+DELETE http://localhost:5213/todos/2
+
+###
+GET http://localhost:5213/tasks/1
