@@ -51,7 +51,31 @@ public static class SeedData
                     Genre = "Western",
                     Rating = "NR",
                     Price = 3.99M
-                }
+                },
+                  new Movie
+                  {
+                      Title = "Titanic",
+                      ReleaseDate = DateTime.Parse("1997-12-19"),
+                      Genre = "Romance Drama",
+                      Rating = "PG-13",
+                      Price = 13.59M
+                  },
+                  new Movie
+                  {
+                      Title = "Goodfellas",
+                      ReleaseDate = DateTime.Parse("1990-10-19"),
+                      Genre = "Crime Drama",
+                      Rating = "R",
+                      Price = 7.99M
+                  },
+                  new Movie
+                  {
+                      Title = "Rango",
+                      ReleaseDate = DateTime.Parse("2011-4-15"),
+                      Genre = "Animation Comedy",
+                      Rating = "PG",
+                      Price = 6.99M
+                  }
             );
             context.SaveChanges();
         }
